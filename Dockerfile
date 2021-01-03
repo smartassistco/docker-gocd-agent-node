@@ -1,4 +1,4 @@
-## DO NOT MODIFY DIRECTLY. GENERATED WITH build.sh ##
+## DO NOT MODIFY DIRECTLY. GENERATED WITH generate.sh ##
 
 FROM gocd/gocd-agent-alpine-3.12:v20.10.0
 

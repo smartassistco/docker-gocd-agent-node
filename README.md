@@ -32,7 +32,6 @@ FROM smartassist/gocd-agent-node:v20.10.0
 
 - [GoCD's official Alpine agent's Dockerfile](https://hub.docker.com/r/gocd/gocd-agent-alpine-3.12)
 - [Node's official Dockerfile](https://github.com/nodejs/docker-node/raw/master/15/alpine3.12/Dockerfile)
--
 
 ## Versions
 
@@ -44,5 +43,5 @@ FROM smartassist/gocd-agent-node:v20.10.0
 
 ## Building
 
-- Update versions in `build.sh`
-- Run `sh build.sh`
+- Update versions in `generate.sh`
+- Run `bash generate.sh`
