@@ -15,7 +15,7 @@ echo "Creating Dockerfile"
 
 # Creating node.dockerfile
 {
-  echo -e "## DO NOT MODIFY DIRECTLY. GENERATED WITH build.sh ##\\n"
+  echo -e "## DO NOT MODIFY DIRECTLY. GENERATED WITH generate.sh ##\\n"
 
   echo "FROM gocd/gocd-agent-alpine-3.12:v$GOCD_AGENT_VERSION"
 
