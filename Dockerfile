@@ -1,6 +1,6 @@
 ## DO NOT MODIFY DIRECTLY. GENERATED WITH generate.sh ##
 
-FROM gocd/gocd-agent-alpine-3.12:v20.10.0
+FROM gocd/gocd-agent-alpine-3.13:v21.2.0
 
 # Become root
 USER root
@@ -11,7 +11,7 @@ USER root
 #
 
 
-ENV NODE_VERSION 15.5.0
+ENV NODE_VERSION 15.14.0
 
 RUN addgroup -g 1001 node \
     && adduser -u 1001 -G node -s /bin/sh -D node \
@@ -23,7 +23,7 @@ RUN addgroup -g 1001 node \
       && case "${alpineArch##*-}" in \
         x86_64) \
           ARCH='x64' \
-          CHECKSUM="2dae9e85dc69c7d7bb423ed87e9933c0b3a34c4ef5333753c7c8bb05f92f544c" \
+          CHECKSUM="5aefd9f12592e6ed7e7a1fe2696576cf3e19d42c6103abcc3347cab2e54b7fb3" \
           ;; \
         *) ;; \
       esac \
@@ -49,7 +49,7 @@ RUN addgroup -g 1001 node \
     && for key in \
       4ED778F539E3634C779C87C6D7062848A1AB005C \
       94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
-      1C050899334244A8AF75E53792EF661D867B9DFA \
+      74F12602B6F1C4E913FAA37AD3A89613643B6201 \
       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1 \
       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600 \
       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8 \

@@ -1,7 +1,8 @@
 #!/bin/bash
 
-GOCD_AGENT_VERSION=20.10.0
+GOCD_AGENT_VERSION=21.2.0
 NODE_VERSION=15
+ALPINE_VERSION=3.13
 
 echo "Creating temp directory"
 
@@ -9,7 +10,7 @@ mkdir -p tmp
 
 echo "Downloading source files"
 
-wget -q -O tmp/node.dockerfile "https://github.com/nodejs/docker-node/raw/master/$NODE_VERSION/alpine3.12/Dockerfile"
+wget -q -O tmp/node.dockerfile "https://github.com/nodejs/docker-node/raw/main/$NODE_VERSION/alpine$ALPINE_VERSION/Dockerfile"
 
 echo "Creating Dockerfile"
 
@@ -17,7 +18,7 @@ echo "Creating Dockerfile"
 {
   echo -e "## DO NOT MODIFY DIRECTLY. GENERATED WITH generate.sh ##\\n"
 
-  echo "FROM gocd/gocd-agent-alpine-3.12:v$GOCD_AGENT_VERSION"
+  echo "FROM gocd/gocd-agent-alpine-$ALPINE_VERSION:v$GOCD_AGENT_VERSION"
 
   echo -e "\\n# Become root"
   echo -e "USER root\\n"
