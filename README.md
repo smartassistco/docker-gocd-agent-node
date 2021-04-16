@@ -31,7 +31,7 @@ FROM smartassist/gocd-agent-node15:v21.2.0
 ## Contents
 
 - [GoCD's official Alpine agent's Dockerfile](https://hub.docker.com/r/gocd/gocd-agent-alpine-3.13)
-- [Node's official Dockerfile](https://github.com/nodejs/docker-node/raw/master/15/alpine3.13/Dockerfile)
+- [Node's official Dockerfile](https://github.com/nodejs/docker-node/raw/main/15/alpine3.13/Dockerfile)
 
 ## Versions
 
